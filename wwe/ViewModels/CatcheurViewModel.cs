@@ -29,8 +29,6 @@ public partial class CatcheurViewModel
 
     private string Palmares;
 
-    private string Ring;
-
     private bool HOF;
 
     private bool Actif;
@@ -39,6 +37,11 @@ public partial class CatcheurViewModel
     {
         Nom = "Mark William Calaway";
         DateNaissance = new DateOnly(1965, 3, 24);
+        Alias = "The Undertaker";
+        Nationalite = "Americaine";
+        Palmares = "1 fois champion poids lourds unifié de l'USWA, 1 fois champion poids lourds de la WCWA Texas, 4 fois champion de la WWF / WWE, 6 fois champion du monde par équipes de la WWE, 1 fois champion Hardcore de la WWE  ";
+        HOF = true;
+        Actif = false;
     }
 
 }

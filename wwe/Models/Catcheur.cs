@@ -10,8 +10,6 @@ public class Catcheur
     
     public string Nationalite{get;set;}
     
-    public string Ring{get;set;}
-    
     public string Palmares{get;set;}
 
     public bool HOF{get;set;}
