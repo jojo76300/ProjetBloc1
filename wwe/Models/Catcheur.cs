@@ -4,11 +4,11 @@ public class Catcheur
 {
     public string Nom { get; set; }
     
-    public int datenaissance { get; set; }
+    public DateOnly datenaissance { get; set; }
     
     public string Alias { get; set; }
     
-    public string Nationalité{get;set;}
+    public string Nationalite{get;set;}
     
     public string Ring{get;set;}
     
