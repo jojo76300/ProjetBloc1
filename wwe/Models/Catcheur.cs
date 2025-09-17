@@ -3,20 +3,17 @@
 public class Catcheur
 {
     public string Nom { get; set; }
-    public DateTime DateDeNaissance { get; set; }
+    
+    public int datenaissance { get; set; }
+    
+    public string Alias { get; set; }
+    
+    public string Nationalité{get;set;}
+    
+    public string Ring{get;set;}
+    
+    public string Palmares{get;set;}
 
-    // Méthode pour obtenir l'âge
-    public int GetAge()
-    {
-        var aujourdhui = DateTime.Today;
-        var age = aujourdhui.Year - DateDeNaissance.Year;
-
-        if (DateDeNaissance.Date > aujourdhui.AddYears(-age))
-        {
-            age--;
-        }
-
-        return age;
-    }
+    public bool HOF{get;set;}
     
 }
