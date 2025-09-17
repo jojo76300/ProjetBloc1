@@ -9,4 +9,5 @@ public class Championnat
     public DateTime DateCreation { get; set; }
     
     public string Periode { get; set; }
+    d
 }
