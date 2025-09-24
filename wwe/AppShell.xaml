@@ -13,20 +13,32 @@
             Route="MainPage" /> 
     </Tab>
 </TabBar> 
-
+    
+<TabBar>
+    <Tab>
     <ShellContent
         Title="Accueil"
-        ContentTemplate="{DataTemplate local:Pages.Accueil}"
+        ContentTemplate="{DataTemplate local:Accueil}"
         Route="Accueil" />
+    </Tab>
+</TabBar>  
     
-    <ShellContent
-        Title="Catcheurs"
-        ContentTemplate="{DataTemplate local:Pages.Catcheur}"
-        Route="Catcheur" />
-
-    <ShellContent
-        Title="Championnats"
-        ContentTemplate="{DataTemplate local:Pages.Championnat}"
-        Route="Championnat" />
+    <TabBar>
+        <Tab>
+        <ShellContent
+            Title="Catcheurs"
+            ContentTemplate="{DataTemplate local:Catcheur}"
+            Route="Catcheur" />
+        </Tab>
     
+    </TabBar>
+    
+    <TabBar>
+        <Tab>
+        <ShellContent
+            Title="Championnats"
+            ContentTemplate="{DataTemplate local:Championnat}"
+            Route="Championnat" />
+        </Tab>
+    </TabBar> 
 </Shell>
