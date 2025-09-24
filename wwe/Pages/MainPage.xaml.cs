@@ -1,4 +1,4 @@
-﻿namespace wwe;
+﻿namespace wwe.Pages;
 
 public partial class MainPage : ContentPage
 {
