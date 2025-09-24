@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using wwe.Pages;
+using wwe.ViewModels;
 
 namespace wwe;
 
@@ -14,6 +16,13 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
+
+        builder.Services.AddSingleton<AppShell>();
+        builder.Services.AddSingleton<Accueil>();
+        builder.Services.AddSingleton<Catcheur>();
+        builder.Services.AddSingleton<Championnat>();
+        builder.Services.AddSingleton<CatcheurViewModel>();
+        builder.Services.AddSingleton<ChampionnatViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();

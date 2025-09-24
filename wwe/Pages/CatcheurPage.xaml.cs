@@ -4,11 +4,11 @@ namespace wwe.Pages;
 
 public partial class Catcheur : ContentPage
 {
-	public Catcheur()
+	public Catcheur(CatcheurViewModel catcheurViewModel)
 	{
 		InitializeComponent();
 
         // On met le ViewModel comme BindingContext
-        BindingContext = new CatcheurViewModel();
+        BindingContext = catcheurViewModel;
     }
 }

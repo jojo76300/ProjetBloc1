@@ -65,13 +65,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <MauiXaml Update="Pages\Accueil.xaml">
+      <MauiXaml Update="Pages\AccueilPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
-      <MauiXaml Update="Pages\Catcheur.xaml">
+      <MauiXaml Update="Pages\CatcheurPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
-      <MauiXaml Update="Pages\Championnat.xaml">
+      <MauiXaml Update="Pages\ChampionnatPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
       <MauiXaml Update="Pages\MainPage.xaml">
@@ -80,6 +80,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Compile Update="Pages\AccueilPage.xaml.cs">
+        <DependentUpon>AccueilPage.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Pages\CatcheurPage.xaml.cs">
+        <DependentUpon>CatcheurPage.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Pages\ChampionnatPage.xaml.cs">
+        <DependentUpon>ChampionnatPage.xaml</DependentUpon>
+      </Compile>
       <Compile Update="Pages\MainPage.xaml.cs">
         <DependentUpon>MainPage.xaml</DependentUpon>
         <SubType>Code</SubType>
