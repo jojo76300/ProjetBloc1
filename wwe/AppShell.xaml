@@ -11,4 +11,19 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="Accueil"
+        ContentTemplate="{DataTemplate local:Pages.Accueil}"
+        Route="Accueil" />
+    
+    <ShellContent
+        Title="Catcheurs"
+        ContentTemplate="{DataTemplate local:Pages.Catcheur}"
+        Route="Catcheur" />
+
+    <ShellContent
+        Title="Championnats"
+        ContentTemplate="{DataTemplate local:Pages.Championnat}"
+        Route="Championnat" />
+    
 </Shell>

@@ -1,0 +1,12 @@
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wwe.Pages.Accueil"
+             Title="Accueil">
+    <VerticalStackLayout>
+        <Label 
+            Text="You have entered the world of WWE"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

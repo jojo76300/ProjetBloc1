@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wwe.Pages.Catcheur"
+             Title="Catcheur">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="{Binding Nom}" FontAttributes="Bold" FontSize="22"/>
+        <Label Text="{Binding Alias}" FontSize="18"/>
+        <Label Text="{Binding Nationalite}" FontSize="16"/>
+        <Label Text="{Binding Age}" FontSize="16"/>
+        <Label Text="{Binding Palmares}" FontSize="14"/>
+        <Label Text="HOF ?" FontSize="14"/>
+        <Label Text="{Binding HOF}" FontSize="14"/> 
+        <Label Text="Actif ?" FontSize="14"/>
+        <Label Text="{Binding Actif}" FontSize="14"/>
+    </VerticalStackLayout>
+</ContentPage>

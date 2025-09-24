@@ -2,16 +2,14 @@ namespace wwe.ViewModels;
 
 public class ChampionnatViewModel
 {
-    private string Nom;
-    
-    private string Info;
-    
-    private DateOnly DateCreation;
-    
-    private string Periode;
-    
-    private string TenantTitre;
-    
+    // Propriétés publiques pour le binding
+    public string Nom { get; set; }
+    public string Info { get; set; }
+    public DateOnly DateCreation { get; set; }
+    public string Periode { get; set; }
+    public string TenantTitre { get; set; }
+
+    // Constructeur
     public ChampionnatViewModel()
     {
         Nom = "WWE Championship";
