@@ -19,8 +19,8 @@
                             <Label Text="{Binding Nationalite}" FontSize="14" TextColor="White"/>
                             <Label Text="{Binding AgeTexte}" FontSize="14" TextColor="White"/>
                             <Label Text="{Binding Palmares}" FontSize="12" TextColor="White"/>
-                            <Label Text="Actif: {Binding Actif}" FontSize="12" TextColor="White"/>
-                            <Label Text="HOF: {Binding HOF}" FontSize="12" TextColor="White"/>
+                            <Label Text="{Binding Actif}" FontSize="12" TextColor="White"/>
+                            <Label Text="{Binding HOF}" FontSize="12" TextColor="White"/>
                         </VerticalStackLayout>
 
                     </HorizontalStackLayout>

@@ -32,5 +32,8 @@ public class Catcheur
     }
 
     public string AgeTexte => $"Age: {Age}";
+    public string ActifTexte => $"Actif: {Actif}";
+    public string HOFTexte => $"HOF: {HOF}";
+
 
 }
