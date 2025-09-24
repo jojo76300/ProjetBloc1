@@ -9,7 +9,7 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private async void OnCounterClicked(object sender, EventArgs e)
+    private async void Bouton(object sender, EventArgs e)
     {
         // Navigation vers la page Accueil
         await Shell.Current.GoToAsync(nameof(Pages.Accueil));
