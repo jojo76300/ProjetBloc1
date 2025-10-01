@@ -2,13 +2,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="wwe.Pages.Championnat">
              <!--Title="Championnat"-->
+    <CollectionView ItemsSource="{Binding Championnats}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame CornerRadius="12" Padding="10" Margin="6" BackgroundColor="#1F1F1F" HasShadow="True">
+                    <HorizontalStackLayout Spacing="10">
 
-    <VerticalStackLayout Padding="20" Spacing="10">
-        <Label Text="{Binding Nom}" FontAttributes="Bold" FontSize="22"/>
-        <Label Text="{Binding Info}" FontSize="16"/>
-        <Label Text="{Binding DateCreation}" FontSize="16"/>
-        <Label Text="{Binding Periode}" FontSize="16"/>
-        <Label Text="{Binding TenantTitre}" FontSize="16"/>
-    </VerticalStackLayout>
+                        <VerticalStackLayout Padding="20" Spacing="10">
+                            <Label Text="{Binding NomTexte}" FontAttributes="Bold" FontSize="22"/>
+                            <Label Text="{Binding InfoTexte}" FontSize="16"/>
+                            <Label Text="{Binding DateCreationTexte}" FontSize="16"/>
+                            <Label Text="{Binding PeriodeTexte}" FontSize="16"/>
+                            <Label Text="{Binding TenantTitreTexte}" FontSize="16"/>
+                        </VerticalStackLayout>
+
+                    </HorizontalStackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    
 
 </ContentPage>
