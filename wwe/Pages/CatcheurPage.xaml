@@ -1,7 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="wwe.Pages.Catcheur"
-             Title="Catcheur">
+             x:Class="wwe.Pages.Catcheur">
+            <!--Title="Catcheur"-->
 
     <CollectionView ItemsSource="{Binding Catcheurs}">
         <CollectionView.ItemTemplate>
@@ -15,12 +15,12 @@
                         <!-- Texte -->
                         <VerticalStackLayout Spacing="4">
                             <Label Text="{Binding Nom}" FontAttributes="Bold" FontSize="20" TextColor="White"/>
-                            <Label Text="{Binding Alias}" FontSize="16" TextColor="#FFD700"/>
-                            <Label Text="{Binding Nationalite}" FontSize="14" TextColor="White"/>
+                            <Label Text="{Binding AliasTexte}" FontSize="16" TextColor="#FFD700"/>
+                            <Label Text="{Binding NationaliteTexte}" FontSize="14" TextColor="White"/>
                             <Label Text="{Binding AgeTexte}" FontSize="14" TextColor="White"/>
-                            <Label Text="{Binding Palmares}" FontSize="12" TextColor="White"/>
-                            <Label Text="{Binding Actif}" FontSize="12" TextColor="White"/>
-                            <Label Text="{Binding HOF}" FontSize="12" TextColor="White"/>
+                            <Label Text="{Binding PalmaresTexte}" FontSize="12" TextColor="White"/>
+                            <Label Text="{Binding ActifTexte}" FontSize="12" TextColor="White"/>
+                            <Label Text="{Binding HOFTexte}" FontSize="12" TextColor="White"/>
                         </VerticalStackLayout>
 
                     </HorizontalStackLayout>

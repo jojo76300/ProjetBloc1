@@ -31,9 +31,13 @@ public class Catcheur
 
     }
 
-    public string AgeTexte => $"Age: {Age}";
-    public string ActifTexte => $"Actif: {Actif}";
-    public string HOFTexte => $"HOF: {HOF}";
+    public string AgeTexte => $"Age : {Age}";
+    public string ActifTexte => $"Actif : {Actif}";
+    public string HOFTexte => $"Hall Of Fame : {HOF}";
+    public string DateNaissanceTexte => $"Né le : {DateNaissance.ToString("dd/MM/yyyy")}";
+    public string NationaliteTexte => $"Nationalité : {Nationalite}";
+    public string AliasTexte => $"Nom de ring : {Alias}";
+    public string PalmaresTexte => $"Palmarès : {Palmares}";
 
 
 }
