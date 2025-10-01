@@ -13,11 +13,11 @@
                 Route="MainPage" />
         </Tab>
 
-        <Tab Icon="accueil.png">
+        <!--<Tab Icon="accueil.png">
             <ShellContent
                 ContentTemplate="{DataTemplate local:Accueil}"
                 Route="Accueil" />
-        </Tab>
+        </Tab>-->
 
         <Tab Icon="catcheur.png">
             <ShellContent

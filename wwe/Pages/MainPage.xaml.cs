@@ -12,7 +12,9 @@ public partial class MainPage : ContentPage
     private async void Bouton(object sender, EventArgs e)
     {
         // Navigation vers la page Accueil
-        await Shell.Current.GoToAsync(nameof(Pages.Accueil));
+        //await Shell.Current.GoToAsync(nameof(Pages.Catcheur));
+        await Shell.Current.GoToAsync("///Catcheur");
+
     }
 
 }
