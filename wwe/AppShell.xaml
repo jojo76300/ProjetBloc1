@@ -5,35 +5,40 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:wwe.Pages"
     Title="wwe">
-
+<TabBar>
+    <Tab Icon="accueil.png">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" /> 
+    </Tab>
+</TabBar> 
+    
+<TabBar>
+    <Tab>
+    <ShellContent
+        Title="Accueil"
+        ContentTemplate="{DataTemplate local:Accueil}"
+        Route="Accueil" />
+    </Tab>
+</TabBar>  
+    
     <TabBar>
-        <Tab Icon="home.png">
-            <ShellContent
-                Title="Home"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="MainPage" />
+        <Tab>
+        <ShellContent
+            Title="Catcheurs"
+            ContentTemplate="{DataTemplate local:Catcheur}"
+            Route="Catcheur" />
         </Tab>
-
-        <Tab Icon="accueil.png">
-            <ShellContent
-                Title="Accueil"
-                ContentTemplate="{DataTemplate local:Accueil}"
-                Route="Accueil" />
-        </Tab>
-
-        <Tab Icon="catcheur.png">
-            <ShellContent
-                Title="Catcheurs"
-                ContentTemplate="{DataTemplate local:Catcheur}"
-                Route="Catcheur" />
-        </Tab>
-
-        <Tab Icon="championnat.png">
-            <ShellContent
-                Title="Championnats"
-                ContentTemplate="{DataTemplate local:Championnat}"
-                Route="Championnat" />
-        </Tab>
+    
     </TabBar>
-
+    
+    <TabBar>
+        <Tab>
+        <ShellContent
+            Title="Championnats"
+            ContentTemplate="{DataTemplate local:Championnat}"
+            Route="Championnat" />
+        </Tab>
+    </TabBar> 
 </Shell>
