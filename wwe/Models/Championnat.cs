@@ -12,6 +12,8 @@ public class Championnat
     
     public string TenantTitre { get; set; }
 
+    public string Image { get; set; }
+
     public string DateCreationTexte => $"Créé le : {DateCreation:dd/MM/yyyy}";
     public string PeriodeTexte => $"Période : {Periode}";
     public string TenantTitreTexte => $"Tenant du titre : {TenantTitre}";

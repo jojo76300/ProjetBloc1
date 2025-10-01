@@ -8,6 +8,8 @@
                 <Frame CornerRadius="12" Padding="10" Margin="6" BackgroundColor="#1F1F1F" HasShadow="True">
                     <HorizontalStackLayout Spacing="10">
 
+                        <Image Source="{Binding Image}" HeightRequest="100" WidthRequest="100" Aspect="AspectFill" />
+
                         <VerticalStackLayout Padding="20" Spacing="10">
                             <Label Text="{Binding NomTexte}" FontAttributes="Bold" FontSize="22"/>
                             <Label Text="{Binding InfoTexte}" FontSize="16"/>
